@@ -1466,7 +1466,7 @@ details[open] .accordion-icon svg {
 .footer-left {
 	max-width: 268px;
 	padding: 60px 60px 60px 0;
-	border-right: 1px solid rgba(239, 239, 239, 0.24);
+	/* border-right: 1px solid rgba(239, 239, 239, 0.24); */
 }
 
 .footer-logo {
@@ -1480,8 +1480,8 @@ details[open] .accordion-icon svg {
 
 .footer-right {
 	display: flex;
-	justify-content: center;
-	gap: 120PX;
+	justify-content: space-between;
+
 	width: 100%;
 	padding: 60px 0 60px 60px;
 }
