@@ -1121,6 +1121,87 @@ textarea::placeholder {
 	text-transform: uppercase;
 }
 
+
+.accordion-container {
+	max-width: 600px;
+	width: 100%;
+}
+
+details {
+	font-size: var(--title);
+	margin: 0 auto;
+	width: 100%;
+	position: relative;
+	border-bottom: 1px solid var(--border-color);
+	transition: all 0.3s ease-in-out;
+
+	&:hover {
+		opacity: 1;
+	}
+}
+
+summary {
+	user-select: none;
+	cursor: pointer;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	padding: var(--header-padding);
+
+	&:hover {
+		text-decoration: underline;
+
+		& .title {
+			opacity: 1;
+		}
+
+		& .accordion-icon {
+			opacity: 1;
+		}
+	}
+}
+
+.accordion-title {
+	color: #151518;
+	width: 90%;
+	font-weight: 500;
+	transition: all 250ms ease-in-out;
+}
+
+.accordion-icon {
+	opacity: 0.5;
+	pointer-events: none;
+	position: absolute;
+	right: 10px;
+	top: 3px;
+
+	transition: all 150ms ease-out;
+
+	svg {
+		width: var(--icon-size);
+		height: var(--icon-size);
+		transition: transform 0.3s ease-in-out;
+	}
+}
+
+.accordion-content {
+	color: #3c3e47;
+	padding: 20px 0;
+	font-size: var(--content);
+	font-weight: 400;
+	line-height: 1.65;
+}
+
+/** Remove Marker */
+summary::-webkit-details-marker {
+	display: none;
+}
+
+/** Rotate Icon */
+details[open] .accordion-icon svg {
+	transform: rotate(180deg);
+}
+
 /* Team END */
 
 
@@ -1233,6 +1314,13 @@ textarea::placeholder {
 	background-color: #F9F9F9;
 }
 
+.form-box {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .form-row {
 	display: flex;
 	align-items: center;
@@ -1241,6 +1329,21 @@ textarea::placeholder {
 .form-left {
 	max-width: 500px;
 	margin-right: 70px;
+}
+
+.google-form {
+	background-color: var(--secondary-background-color);
+	padding: 30px;
+	width: 100%;
+}
+
+.google-form .def-title {
+	font-size: 30px;
+}
+
+
+.google-form .def-title::before {
+	content: none;
 }
 
 .s-form .def-title {
@@ -1258,6 +1361,45 @@ textarea::placeholder {
 	margin-bottom: 30px;
 	display: flex;
 	justify-content: center;
+}
+
+.social-media__list {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	gap: 30px;
+}
+
+.social-media__list img {
+	transition: all 300ms;
+}
+
+.social-media__title {
+	margin: 30px 0 10px;
+	font-size: 30px;
+	font-weight: 700;
+
+}
+
+.social-media__link {
+	display: block;
+	padding: 10px;
+	transition: all 300ms;
+}
+
+.social-media__link img {
+	transition: all 300ms;
+}
+
+.social-media__link:hover>img {
+	transform: scale(1.2);
+}
+
+.social-media__link.mono {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
 }
 
 .form-image img {
@@ -1312,7 +1454,7 @@ textarea::placeholder {
 
 /* Footer START */
 .site-footer {
-	background-color: #1C2835;
+	background-color: #656565;
 	color: #fff;
 	font-size: 14px;
 }
@@ -1331,9 +1473,15 @@ textarea::placeholder {
 	margin-bottom: 25px;
 }
 
+
+.footer-logo img {
+	width: 100px;
+}
+
 .footer-right {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
+	gap: 120PX;
 	width: 100%;
 	padding: 60px 0 60px 60px;
 }
