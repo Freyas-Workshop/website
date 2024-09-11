@@ -232,7 +232,7 @@ textarea::placeholder {
 	display: flex;
 	list-style-type: none;
 	padding: 0;
-	column-gap: 50px;
+	column-gap: 40px;
 	margin: 0;
 }
 
@@ -243,6 +243,16 @@ textarea::placeholder {
 .header-nav ul li a:hover {
 	color: var(--accent-yellow-color);
 	text-shadow: rgb(255, 211, 68) 0px 0px 10px;
+}
+
+.lang-link {
+	color: rgb(255, 211, 68);
+}
+
+.lang-link:hover {
+	text-shadow: rgb(255, 255, 255) 0px 0px 15px;
+
+
 }
 
 .header-nav .anchor-link {
