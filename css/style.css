@@ -1088,7 +1088,8 @@ textarea::placeholder {
 
 .team-row {
 	display: flex;
-	justify-content: space-around;
+	flex-wrap: wrap;
+	justify-content: flex-start;
 	column-gap: 35px;
 }
 
