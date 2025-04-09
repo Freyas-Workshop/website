@@ -1391,6 +1391,7 @@ details[open] .accordion-icon svg {
 }
 
 .social-media__title {
+	text-align: center;
 	margin: 90px 0 10px;
 	font-size: 30px;
 	font-weight: 700;
@@ -1884,10 +1885,7 @@ details[open] .accordion-icon svg {
 		padding-right: 0;
 	}
 
-	.footer-right {
-		padding: 0;
-		margin-bottom: 30px;
-	}
+
 
 	/* Footer 992 END */
 
@@ -2122,6 +2120,7 @@ details[open] .accordion-icon svg {
 
 	.footer-right {
 		display: block;
+		padding: 60px 0;
 	}
 
 	.footer-info-item {
